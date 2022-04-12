@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*section 1*/
+
+ .section.sec1{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.section.sec1 .sec-con {
+    flex: 0 1 1400px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0 ;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.section.sec1 .sec-con .gallery{
+    width: 500%;
+    height: inherit;
+    position: absolute;
+    left: 0;   
+    top: 0;
+}
+.section.sec1 .sec-con .gallery ul{
+    display: flex;
+    justify-content: center;
+    height: inherit;
+}
+.section.sec1 .sec-con .gallery ul li{
+    width: 20%;
+    height: inherit;
+}
+
+.section.sec1 .sec-con .center-btn{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    margin-top: -20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.section.sec1 .sec-con .center-btn span.arrow{
+    width: 35px;
+    height: 35px;
+}
+.section.sec1 .sec-con .center-btn span.arrow img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section.sec1 .sec-con .b-con{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+.section.sec1 .sec-con .b-con ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.section.sec1 .sec-con .b-con ul>li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid burlywood;
+}
+.section.sec1 .sec-con .b-con ul>li:hover{
+    background-color: burlywood;
+}
+
+/*section 2*/
+.section.sec2{
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.section.sec2 .sec-con{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid rgb(95, 41, 41);
+}
+.section.sec2 .sec-con>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.section.sec2 .sec-con>ul>li{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+}
+.section.sec2 .sec-con>ul>li img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+@media only screen and (max-width:767px) {
+    .section.sec2 .sec-con{
+        height: auto;
+    }
+    .section.sec2 .sec-con>ul>li{
+        width: 98%;
+        padding: 0 2%;
+    }
+}

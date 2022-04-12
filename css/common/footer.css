@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.inner-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+.inner-footer .fcon{
+    flex: 0 1 1000px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-footer .right-con{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 10px;
+}
+.inner-footer .mid-con{
+    flex: 1;
+    padding: 0 10px;
+}
+.inner-footer .left-con{
+    flex: 1;
+    padding: 0 10px;
+}
+
+.inner-footer h2.title{
+    color: aliceblue;
+    line-height: 30px;
+    padding: 20px 0 ;
+}
+.inner-footer p{
+    color: rgb(19, 122, 19);
+    line-height: 20px;
+    padding: 20px 0 ;
+}
